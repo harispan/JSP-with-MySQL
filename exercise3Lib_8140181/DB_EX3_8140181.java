@@ -4,9 +4,9 @@ import java.sql.*;
 
 public class DB_EX3_8140181 {
 
-	private final String dbname = "ismgroup12";
-	private final String dbusername = "ismgroup12";
-	private final String dbpassword = "0943os";
+	private final String dbname = "*****";
+	private final String dbusername = "*****"; //hidden for security reasons
+	private final String dbpassword = "*****";
 
 	private Connection con = null;
 
@@ -30,7 +30,7 @@ public class DB_EX3_8140181 {
 		try {
 			// establish a connection with the database and creates a Connection
 			// object (con)
-			con = DriverManager.getConnection("jdbc:mysql://195.251.249.131:3306/" + dbname, dbusername, dbpassword);
+			con = DriverManager.getConnection("jdbc:mysql://*****/" + dbname, dbusername, dbpassword);
 		} catch (Exception e) {
 			con = null;
 			// throw SQLException if a database access error occurs
